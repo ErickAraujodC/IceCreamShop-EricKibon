@@ -1,0 +1,101 @@
+.limit-width-about{
+    max-width: 1240px;
+    margin: auto;
+}
+.about{
+    padding-top: 50px;
+    width: 100%;
+}
+
+.banner-about{
+    background-image: url(../../assets/images/banner-sobre.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    min-height: 80vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.banner-about h1{
+    font-size: 50px;
+    color: #fff;
+    text-shadow: 3px 5px 2px #474747;
+}
+
+.container-about{
+    width: 80%;
+    margin: auto;
+    padding: 50px 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.container-about h2{
+    font-size: 35px;
+    line-height: 26px;
+    text-align: center;
+}
+
+.container-about .limit-width span{
+    font-size: 20px;
+    font-style: italic;
+    font-weight: 600;
+    margin-top: 10px;
+    text-align: center;
+}
+
+.container-about p{
+    text-align: center;
+    line-height: 26px;
+    margin-bottom: 15px;
+}
+
+.container-about p:first-of-type{
+    margin-top: 20px;
+}
+
+.container-img div{
+    display: flex;
+}
+
+.container-img img{
+    width: 50%;
+    height: auto;
+    object-fit: cover;
+    margin-bottom: 0;
+}
+
+
+@media screen and (max-width: 768px) {
+    .banner-about h1 {
+      font-size: 60px;
+    }
+  
+    .container-img div {
+      flex-direction: column;
+    }
+  
+    .container-img img {
+      width: 100%;
+    }
+
+    .container-about p{
+        text-align: justify;
+    }
+  }
+  
+  @media screen and (max-width: 436px){
+    .banner-about{
+        min-height: 40vh;
+    }
+    .banner-about h1 {
+      font-size: 40px;
+    }
+
+    .container-about p{
+        text-align: justify;
+    }
+  }

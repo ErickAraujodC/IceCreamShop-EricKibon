@@ -1,0 +1,98 @@
+.limit-width-flavors{
+    margin: auto;
+}
+
+.flavors{
+    width: 100%;
+}
+
+.banner-flavors{
+    background-image: url(../../assets/images/banner-sabores.jpg);
+    background-color: #f9db79;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    min-height: 80vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.banner-flavors h1{
+    font-size: 50px;
+    color: #fff;
+    text-shadow: 3px 5px 2px #474747;
+}
+
+.flavors{
+    padding-top: 50px;
+}
+
+.flavors-content h2{
+    padding-top: 80px;
+    font-size: 30px;
+  font-weight: 600;
+}
+.cards{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    padding: 50px;
+}
+
+.box-ice-cream{
+    width: 30%;
+    height: auto;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    text-align: center;
+    line-height: 26px;
+    border-radius: 4px;
+    box-shadow: 2px 2px 15px 2px #d9dde1;
+    margin-bottom: 30px;
+    cursor: pointer;
+ 
+}
+
+.box-ice-cream p{
+    margin: 10px 0
+}
+
+.box-ice-cream img{
+    width: 100%;
+    height: 200px;
+    object-fit: contain;
+}
+
+.box-ice-cream img:hover{
+    scale: 1.2;
+}
+
+@media screen and (max-width: 768px) {
+    .cards{
+        padding: 10px;
+    }
+    .box-ice-cream{
+        width: 80vw;
+        margin: 10px 20px;
+    }
+}
+
+@media screen and (max-width: 436px) {
+    .banner-flavors{
+        min-height: 40vh;
+    }
+    .cards{
+        padding: 5px;
+    }
+    .box-ice-cream{
+        width: 100%;
+    }
+    .banner-flavors h1 {
+        font-size: 40px;
+      }
+}
