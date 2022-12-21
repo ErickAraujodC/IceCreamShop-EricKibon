@@ -1,6 +1,8 @@
 import React from "react";
 import Header from "../../components/Header";
 import Footer from "../../components/Footer";
+import img_sobre from "../../assets/images/sobre-image.jpg"
+import img_sorveteria from "../../assets/images/sorveteria.jpg"
 import './style.css'
 
 const About = () =>{
@@ -40,8 +42,8 @@ const About = () =>{
 
                 <div className="container-img">
                     <div>
-                        <img src="../../src/assets/images/sobre-image.jpg" alt="Pessoas tomando sorvete" />
-                        <img src="../../src/assets/images/sorveteria.jpg" alt="Sorveteria" />                      
+                        <img src={img_sobre} alt="Pessoas tomando sorvete" />
+                        <img src={img_sorveteria} alt="Sorveteria" />                      
                     </div>
                 </div>
             </div>

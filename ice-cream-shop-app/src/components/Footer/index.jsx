@@ -1,12 +1,14 @@
 import React from "react";
+import logo from "../../assets/images/logo.png"
 import './style.css'
+
 
 const Footer = () =>{
     return(
         <footer>
             <div className="footer-content limit-width">
                 <div className="logo-contacts">
-                    <img className="logo-footer" src="../../src/assets/images/logo.png" alt="Logo" />
+                    <img className="logo-footer" src={logo} alt="Logo" />
                     <div className="contacts">
                         <h1>Endereço</h1>
                         <p>

@@ -1,6 +1,9 @@
 import React from "react";
 import Header from "../../components/Header";
 import Footer from "../../components/Footer";
+import banner_sabores from "../../assets/images/banner-sabores.jpg"
+import banner_eventos from "../../assets/images/sobre-image.jpg"
+import banner_sobre from "../../assets/images/eventos-image.jpg"
 import './style.css'
 
 const Home = () =>{
@@ -13,7 +16,7 @@ const Home = () =>{
                     <h1>SORVETE ARTESANAL <br /> EricKibon</h1>
                 </div>
                 <div className="box-home">
-                    <img className="box-img" src="../../src/assets/images/banner-sabores.jpg" alt="Imagens Sorvetes" />
+                    <img className="box-img" src={banner_sabores} alt="Imagens Sorvetes" />
                     <div className="box-txt">
                         <h2>Nossos Sabores</h2>
                         <p>Novos e deliciosos!</p>
@@ -36,11 +39,11 @@ const Home = () =>{
                             sorvete da sua vida! Venha nos conhecer e passar um tempo aqui com a gente.
                         </p>
                     </div>
-                    <img className="box-img" src="../../src/assets/images/eventos-image.jpg" alt="Imagens Sorvetes" />
+                    <img className="box-img" src={banner_sobre} alt="Imagens Sorvetes" />
 
                 </div>
                 <div className="box-home">
-                    <img className="box-img" src="../../src/assets/images/sobre-image.jpg" alt="Imagens Sorvetes" />
+                    <img className="box-img" src={banner_eventos} alt="Imagens Sorvetes" />
                     <div className="box-txt">
                         <h2>SOBRE NÓS</h2>
                         <p>Alegria em cada casquinha!</p>
